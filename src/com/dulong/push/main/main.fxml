@@ -1,0 +1,23 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0"
+      prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.dulong.push.main.MainController">
+
+    <!--IP地址-->
+    <Label layoutX="136.0" layoutY="54.0" text="IP地址："/>
+    <TextField layoutX="212.0" layoutY="50.0" fx:id="ip"/>
+
+    <!--用户ID-->
+    <Label layoutX="136.0" layoutY="104.0" text="用户ID："/>
+    <TextField layoutX="212.0" layoutY="100.0" fx:id="id"/>
+
+    <!--发送-->
+    <Button layoutX="280.0" layoutY="154.0" mnemonicParsing="false" text="发送" fx:id="send"
+            onMouseClicked="#sendClick"/>
+    <!--发送-->
+    <Button layoutX="200.0" layoutY="154.0" mnemonicParsing="false" text="在线" fx:id="online"
+            onMouseClicked="#onlineClick"/>
+    <TextField layoutX="100" layoutY="204.0" minWidth="320" fx:id="resultText"/>
+
+</Pane>
